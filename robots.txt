@@ -1,0 +1,6 @@
+# PlayNova: everyone is welcome to read the site.
+User-agent: *
+Allow: /
+
+# Replace YOUR-DOMAIN-HERE.example with your real address (see README.md).
+Sitemap: https://YOUR-DOMAIN-HERE.example/sitemap.xml

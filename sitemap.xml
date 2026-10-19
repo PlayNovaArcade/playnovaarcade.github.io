@@ -2,63 +2,63 @@
 <!-- Replace YOUR-DOMAIN-HERE.example with your real address (see README.md, "Setting your web address"). -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/about.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/about.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/contact.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/contact.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/privacy.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/privacy.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/terms.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/terms.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/snake-rush.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/snake-rush.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/merge-tiles.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/merge-tiles.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/sky-hopper.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/sky-hopper.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/pop-up-bop.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/pop-up-bop.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/reaction-speed.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/reaction-speed.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/memory-match.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/memory-match.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/number-guessing.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/number-guessing.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/tic-tac-toe.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/tic-tac-toe.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/clicker-challenge.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/clicker-challenge.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
   <url>
-    <loc>https://YOUR-DOMAIN-HERE.example/games/pattern-echo.html</loc>
+    <loc>https://playnovagames-hub.github.io/playnova/games/pattern-echo.html</loc>
     <lastmod>2026-10-19</lastmod>
   </url>
 </urlset>

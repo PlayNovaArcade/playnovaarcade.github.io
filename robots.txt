@@ -2,5 +2,4 @@
 User-agent: *
 Allow: /
 
-# Replace YOUR-DOMAIN-HERE.example with your real address (see README.md).
 Sitemap: https://playnovagames-hub.github.io/playnova/sitemap.xml

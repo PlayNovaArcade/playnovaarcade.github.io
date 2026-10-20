@@ -3,8 +3,8 @@
 A free, original mini-games website. Ten games with sound effects, no sign-up,
 no downloads, no tracking. Everything runs in the visitor's browser.
 
-> **Status:** the code is finished and tested on my side, but **it is not online
-> yet**. Nobody can visit it until you publish it. Read `PUBLISHING.md` for that.
+> **Live at:** https://playnovagames-hub.github.io/playnova/ (hosted on GitHub Pages).
+> See `PUBLISHING.md` for hosting, updates and the honest notes about money.
 
 ---
 
@@ -73,7 +73,7 @@ playnova/
   js/sound.js           Sound effects for all games + the Sound on/off button
   js/games/*.js         The ten games
   assets/               Favicon, share image
-  sitemap.xml  robots.txt  _headers
+  sitemap.xml  robots.txt  _headers (ignored by GitHub Pages)
   tools/set-domain.js   Optional helper: sets your real web address everywhere
   README.md  PUBLISHING.md
 ```
@@ -104,36 +104,28 @@ visit and simply forgets things when you close the tab.
 - **Contact, About, Privacy and Terms:** see the next section.
 - **Turn the header/footer links around:** `js/layout.js`.
 
-### Fill in the placeholders BEFORE publishing
+### Contact, About, Privacy and Terms
 
-Search the project for `[REPLACE` to find them. There are five:
+These are filled in: contact email `playnova.support@gmail.com`, About text, GitHub
+Pages as the host, and the "last updated" dates. They are plain-language pages,
+not legal advice. They describe what the site does today (it collects no personal
+data). Update them whenever you change something, and **especially before turning
+on ads or analytics** - see `PUBLISHING.md`. When you change them, also change the
+"Last updated" date.
 
-1. `contact.html` - a contact email **you control**. Tip: make a new free email
-   just for the site. Do not publish your home address, phone, school or full name.
-2. `about.html` - one or two sentences about the creator. Share only what you are
-   happy for the whole internet to read (a first name or nickname is plenty).
-3. `privacy.html` - your hosting provider's name and a link to its privacy policy.
-4. `privacy.html` - the "last updated" date.
-5. `terms.html` - the "last updated" date.
+### The web address
 
-The Privacy Policy and Terms are **templates**, not legal advice. They describe
-what the site does today (it collects no personal data). Re-read them whenever you
-change anything, and **especially before turning on ads or analytics** - see
-`PUBLISHING.md`.
+All pages use `https://playnovagames-hub.github.io/playnova`. If you move to your
+own domain later (for example `https://playnovagames.com`):
 
-### Set your real web address
+1. Use "Find and Replace in all files" to replace
+   `https://playnovagames-hub.github.io/playnova` with the new address.
+2. In `404.html`, replace `/playnova/` with `/` (that page uses full paths so it
+   works in any folder; on your own domain the site sits at the top level).
+3. Upload the changed files again.
 
-Pages contain a stand-in address: `https://YOUR-DOMAIN-HERE.example`. After you
-know your real address (for example `https://my-playnova.pages.dev`), run:
-
-```
-node tools/set-domain.js https://my-playnova.pages.dev
-```
-
-No Node.js? Use your editor's "Find and Replace in all files" and replace
-`https://YOUR-DOMAIN-HERE.example` with your address. Do this before or right
-after you publish. It fixes canonical links, social previews, the sitemap and
-robots.txt. (I cannot know your address in advance, so I did not guess one.)
+(`tools/set-domain.js` only replaces the original placeholder, so it is not needed
+any more.)
 
 ---
 
@@ -177,7 +169,7 @@ passed and the page console showed no errors:**
   when you leave a game page is built in, but I did not test it separately.)
 - No horizontal scrolling at six phone/tablet/desktop widths, and the main
   buttons are big enough to tap.
-- Text and button colour contrast was calculated separately from the 498 checks,
+- Text and button colour contrast was calculated separately from these checks,
   and the low spots were fixed. It was not run through an accessibility audit tool.
 - With ads OFF, no ad slots are visible, and no page loads any ad, analytics or
   other outside script (the site makes no network requests except its own files).
@@ -192,8 +184,8 @@ passed and the page console showed no errors:**
   so check the volume and feel on your own device. Also real-world speed on slow phones.
 - **Touch controls on a real phone** (swipes in Snake and Merge Tiles, the Snake buttons,
   tapping in Sky Hopper and Pop-Up Bop). They were tested with a simulated mouse only.
-- **Live hosting.** The site has not been deployed anywhere, so hosting headers,
-  your domain, social-preview cards, and Search Console were never checked.
+- **Social-preview cards** (how the link looks when shared on WhatsApp, Discord, etc.)
+  were not checked on the real apps.
 - **Google/ad-network review.** Not applicable yet - ads are off.
 - **The legal pages.** They are templates and have not been reviewed by a lawyer.
 

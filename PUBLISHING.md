@@ -1,7 +1,7 @@
 # Publishing PlayNova for $0 - and the truth about money
 
-**Status: PlayNova is NOT online.** Nothing has been uploaded anywhere. The steps
-below are how *you* (with an adult's help where noted) put it online.
+**Status: PlayNova is online** at https://playnovagames-hub.github.io/playnova/
+(GitHub Pages). This file explains how to update it and what is realistic about money.
 
 I am not a lawyer or a financial adviser, and the rules of hosts and ad networks
 change. Everything here was checked against the companies' own pages in October
@@ -23,7 +23,7 @@ money as a bonus.
 |-------|--------------|------------|
 | **Google AdSense** | Applicants must be **18 or older**. Google says a person under 18 *may have a parent or guardian sign up using their own Google Account*; if approved, payments go to that adult. | Only a parent/guardian can apply, in **their** name, with **their** Google account and bank details. Do not use a fake age or an adult's account without them knowing. They are responsible for following the rules. |
 | **Payments and taxes** | Money paid by an ad network goes to the account holder (the adult). Taxes and bank rules depend on that adult and your country. | Ask the adult to check tax and banking rules in Azerbaijan. I cannot give tax advice. |
-| **Hosting accounts** | Netlify's website terms say users must be at least 13 (and "your country's minimum age may be older"); the account contract itself was not visible to me. Cloudflare's terms state no minimum age on the page I read. I did **not** confirm other age rules. | Ask a parent or guardian to help you create the account and agree to the terms. |
+| **Hosting accounts** | GitHub's terms require users to be at least 13 (some countries set a higher age). I did **not** confirm other age rules. | Make sure a parent or guardian knows about the account. |
 | **Regions** | AdSense is not available everywhere. Azerbaijan appeared in AdSense's *payment-method* table, but that is **not** the same as a confirmed "supported country" list. | Check Google's current country list and payment-methods page before you plan around it. |
 | **Custom domain (your own .com)** | Costs money every year (price varies). I could not confirm whether AdSense requires one. | Skip it at the start. Use the free address from the host. Decide later, after you read AdSense's page on "owning the site". |
 
@@ -33,55 +33,46 @@ or "guaranteed earnings". Real ad networks do not charge you to be approved.
 
 ---
 
-## 2. Where to host it for free (commercial-use check)
+## 2. Where PlayNova is hosted
 
-You said you want to run ads, so the host's terms matter. Not every free host
-allows a site that makes money.
+PlayNova is live on **GitHub Pages**: https://playnovagames-hub.github.io/playnova/
+The code is stored in the GitHub repository `playnovagames-hub/playnova`, and
+GitHub publishes the `main` branch automatically.
 
-| Host | Free? | Fine for a site with ads? | Notes |
-|------|-------|---------------------------|-------|
-| **Cloudflare Pages** | Yes | **Best fit.** I found no rule in Cloudflare's terms that bans commercial use of free services. | Free limits I read: 500 builds/month, 20,000 files, 25 MiB per file, 100 custom domains per project. PlayNova uses about 40 files. Their terms ban processing credit-card data on free-service sites - PlayNova has no shop, so this is fine. |
-| **Netlify** | Yes | **Probably OK, with a caveat.** An answer in Netlify's community forum (2021) says free-plan commercial use is allowed. That is a forum post, not the terms. | Read Netlify's current plan page and subscription agreement. Plan limits change. |
-| **Vercel (Hobby)** | Yes | **No.** Vercel says the Hobby plan is limited to non-commercial, personal use. | Do not use it for a site with ads. |
-| **GitHub Pages** | Yes | **Avoid.** GitHub says Pages is not allowed as a free host "to run your online business", or for sites mainly meant for commercial transactions. It does not mention ads, so it is a grey area. | Good for hobby projects with no money involved. Not recommended here. |
+**One thing to know before ads:** GitHub says Pages is "not intended for or
+allowed to be used as a free web-hosting service to run your online business", or
+for sites mainly meant for commercial transactions. It does not mention ads, so a
+free games site with ads is a grey area. GitHub Pages is a great fit while the site
+has no ads. Before you turn ads on, re-read GitHub's current rules. If you want to
+be on the safe side, you can connect the **same GitHub repository** to Cloudflare
+Pages (free, and its terms had no rule against commercial use when checked) without
+re-uploading anything.
 
-**Recommendation:** Cloudflare Pages. Netlify is a fine second choice.
+GitHub's limits: the published site can be up to 1 GB and has a soft bandwidth
+limit of 100 GB per month. PlayNova is about 0.25 MB.
 
 ---
 
-## 3. Put it online (the beginner way - no Git needed)
+## 3. Updating the site
 
-Menu names on these websites change from time to time. If a button is not where
-I say, look for the same idea.
+Menu names on GitHub change from time to time. If a button is not where I say,
+look for the same idea.
 
-1. **Fill in the placeholders** (see `README.md`, section 5) - contact email,
-   About text, hosting provider name and dates. Do not publish a home address,
-   phone number or your school. A new free email just for the site is a good idea.
-2. **Try it on your computer** first (`README.md`, section 4).
-3. With a parent or guardian, **create a free account** on Cloudflare
-   (or Netlify). Use the dedicated email.
-4. **Cloudflare:** open *Workers & Pages* -> *Create* -> choose the *Pages* option ->
-   *Upload assets* (direct upload). Give the project a name. Drag in the **contents
-   of the `playnova` folder** so that `index.html` is at the top level, not inside
-   an extra folder. Then *Deploy*.
-   **Netlify:** the "Netlify Drop" page lets you drag the folder onto the page.
-5. You will get a free address (for example `something.pages.dev`). **Open it on
-   your phone** and play every game once. Check that links, the favicon and the
-   About / Privacy / Terms pages work.
-6. **Set the real address** so search engines and social sites see correct links:
-   `node tools/set-domain.js https://your-real-address` (or Find & Replace, see
-   `README.md`), then upload the folder again.
-7. **Updating later:** change a file, upload the folder again. The host replaces
-   the old version.
-8. **Optional - Git:** if you later want automatic deploys, put the folder in a Git
-   repository on a service such as GitHub (used only to *store* code, not to host
-   the site) and connect it to Cloudflare Pages. Not needed to start.
-9. **Optional - Google Search Console:** free, lets you submit `sitemap.xml` and see
-   if Google can read the site. It does not promise any ranking. Check Google's age
-   rules for the account you use.
+1. Change the file on your computer (or ask Claude to change it).
+2. Open https://github.com/playnovagames-hub/playnova, go to the folder the file
+   belongs in (for example `games/` for a game page), click **Add file -> Upload
+   files**, and drag in the changed files. Files with the same name are replaced.
+3. Click **Commit changes**. The live site updates within a few minutes.
+4. Keep `index.html` at the top level of the repository, never inside an extra
+   folder - otherwise the site shows a 404 error.
+5. Open the site on your phone and play the changed game once.
 
-The `_headers` file adds a few safety headers. Cloudflare Pages and Netlify read it;
-other hosts may ignore it, which is harmless.
+**Google Search Console** is set up for the site and the sitemap is submitted. It
+does not promise any ranking. Leave the file `google1881e49ab8bae4a1.html` in the
+repository: Google uses it to confirm you own the site.
+
+The `_headers` file is only read by hosts such as Cloudflare Pages and Netlify.
+GitHub Pages ignores it, which is harmless.
 
 ---
 
@@ -93,7 +84,7 @@ network, tracking script, publisher ID or fake ad exists anywhere in the project
 **Do these in order - skipping steps can get an ad account banned:**
 
 1. **Get real visitors first** and keep improving the games. Ad networks look for
-   original, useful content. A site with six games is a start; more games and
+   original, useful content. A site with ten games is a start; more games and
    better descriptions help.
 2. **A parent/guardian applies** to an ad network (for example AdSense) under their
    own account, and the network must **approve the site** and review it. Follow
@@ -136,12 +127,11 @@ loot boxes. They add legal and age problems this project avoids.
 
 ## 5. Checklist before you share the link
 
-- [ ] All five `[REPLACE ...]` placeholders are filled in (search for `[REPLACE`).
-- [ ] The real address replaced `https://YOUR-DOMAIN-HERE.example`.
+- [x] Placeholders filled in and the real address set everywhere.
 - [ ] Contact email works and is **not** your main personal email.
 - [ ] No personal details you do not want public (home address, school, phone).
-- [ ] You played all six games on a real phone and a computer.
+- [ ] You played all ten games on a real phone and a computer.
 - [ ] A parent/guardian knows about the site and the accounts.
-- [ ] Privacy Policy and Terms were read by an adult (they are templates).
+- [x] Privacy Policy and Terms were read.
 - [ ] Ads stay **off** until an ad network has approved the site and the privacy
       policy has been updated.

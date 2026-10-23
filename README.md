@@ -3,7 +3,7 @@
 A free, original mini-games website. Ten games with sound effects, no sign-up,
 no downloads, no tracking. Everything runs in the visitor's browser.
 
-> **Live at:** https://playnovagames-hub.github.io/playnova/ (hosted on GitHub Pages).
+> **Live at:** https://playnovaarcade.github.io/ (hosted on GitHub Pages).
 > See `PUBLISHING.md` for hosting, updates and the honest notes about money.
 
 ---
@@ -115,14 +115,12 @@ on ads or analytics** - see `PUBLISHING.md`. When you change them, also change t
 
 ### The web address
 
-All pages use `https://playnovagames-hub.github.io/playnova`. If you move to your
-own domain later (for example `https://playnovagames.com`):
+All pages use `https://playnovaarcade.github.io`. If you move to your own domain
+later (for example `https://playnovaarcade.com`):
 
-1. Use "Find and Replace in all files" to replace
-   `https://playnovagames-hub.github.io/playnova` with the new address.
-2. In `404.html`, replace `/playnova/` with `/` (that page uses full paths so it
-   works in any folder; on your own domain the site sits at the top level).
-3. Upload the changed files again.
+1. Use "Find and Replace in all files" to replace `https://playnovaarcade.github.io`
+   with the new address.
+2. Upload the changed files again.
 
 (`tools/set-domain.js` only replaces the original placeholder, so it is not needed
 any more.)

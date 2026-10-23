@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://playnovagames-hub.github.io/playnova/sitemap.xml
+Sitemap: https://playnovaarcade.github.io/sitemap.xml

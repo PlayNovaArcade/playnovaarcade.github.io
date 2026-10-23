@@ -1,6 +1,6 @@
 # Publishing PlayNova for $0 - and the truth about money
 
-**Status: PlayNova is online** at https://playnovagames-hub.github.io/playnova/
+**Status: PlayNova is online** at https://playnovaarcade.github.io/
 (GitHub Pages). This file explains how to update it and what is realistic about money.
 
 I am not a lawyer or a financial adviser, and the rules of hosts and ad networks
@@ -35,8 +35,8 @@ or "guaranteed earnings". Real ad networks do not charge you to be approved.
 
 ## 2. Where PlayNova is hosted
 
-PlayNova is live on **GitHub Pages**: https://playnovagames-hub.github.io/playnova/
-The code is stored in the GitHub repository `playnovagames-hub/playnova`, and
+PlayNova is live on **GitHub Pages**: https://playnovaarcade.github.io/
+The code is stored in the GitHub repository `playnovaarcade/playnovaarcade.github.io`, and
 GitHub publishes the `main` branch automatically.
 
 **One thing to know before ads:** GitHub says Pages is "not intended for or
@@ -59,7 +59,7 @@ Menu names on GitHub change from time to time. If a button is not where I say,
 look for the same idea.
 
 1. Change the file on your computer (or ask Claude to change it).
-2. Open https://github.com/playnovagames-hub/playnova, go to the folder the file
+2. Open https://github.com/playnovaarcade/playnovaarcade.github.io, go to the folder the file
    belongs in (for example `games/` for a game page), click **Add file -> Upload
    files**, and drag in the changed files. Files with the same name are replaced.
 3. Click **Commit changes**. The live site updates within a few minutes.
